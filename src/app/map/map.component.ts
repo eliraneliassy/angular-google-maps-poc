@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-map',
@@ -9,7 +10,7 @@ export class MapComponent {
 
   center = {lat: 37.774546, lng: -122.433523};
   zoom = 12;
-  heatmapOptions = {radius: 5};
+  heatmapOptions = {radius: 50};
   heatmapData = [
     {lat: 37.782, lng: -122.447},
     {lat: 37.782, lng: -122.445},
@@ -26,4 +27,5 @@ export class MapComponent {
     {lat: 37.785, lng: -122.437},
     {lat: 37.785, lng: -122.435}
   ];
+
 }
